@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOMEI — Gold &amp; Jewellery, Reimagined</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styling/styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+        <img src="assets/Tomei Logo.png" alt="TOMEI"/>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+        <a href="#jewellery">Jewellery</a>
+        <a href="#collections">Collections</a>
+        <a href="#editorial">Highlights</a>
+        <a href="#services">Services</a>
+        </nav>
+
+        <div class="header-icons">
+        <button class="icon-btn" id="searchToggle" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Account">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Bag">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="Menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        </div>
+    </div>
+
+    <div class="search-panel" id="searchPanel">
+        <input type="text" placeholder="Search rings, necklaces, gold bars…" aria-label="Search">
+    </div>
+</header>
+
+    <!-- Hero -->
+<section class="hero" id="hero">
+    <div class="hero__slides">
+        <div class="hero__slide is-active">
+        <div class="hero__media"><img src="assets/heros/hero1.jpeg" alt="KLFW x TOMEI runway"></div>
+        <div class="hero__scrim"></div>
+        <div class="hero__content">
+            <h1>KLFW x TOMEI</h1>
+            <a href="#collections" class="btn btn--solid">Shop the Collection</a>
+        </div>
+        </div>
+
+        <div class="hero__slide">
+        <div class="hero__media"><img src="assets/heros/hero2.jpeg" alt="TOMEI jewellery detail"></div>
+        <div class="hero__scrim"></div>
+        <div class="hero__content hero__content--bottom-left">
+            <h1>Signature Collection</h1>
+            <p class="hero__sub">Elegance defined by cutting-edge artistry</p>
+            <a href="#bestseller" class="btn btn--solid">Shop Collection</a>
+        </div>
+        </div>
+
+        <div class="hero__slide">
+        <div class="hero__media"><img src="assets/heros/hero3.jpeg" alt="TOMEI model portrait"></div>
+        <div class="hero__scrim"></div>
+        <div class="hero__content hero__content--bottom-left">
+            <h1>Pure Gold, Perfected</h1>
+            <p class="hero__sub">Prima Gold celebrates refined craftsmanship in statement silhouette</p>
+            <a href="#editorial" class="btn btn--solid">Shop Collection</a>
+        </div>
+        </div>
+
+        <div class="hero__slide">
+        <div class="hero__media"><img src="assets/heros/hero4.jpeg" alt="TOMEI model portrait"></div>
+        <div class="hero__scrim"></div>
+        <div class="hero__content hero__content--bottom-left">
+            <h1>The Yellow Gold Edit</h1>
+            <p class="hero__sub">Classic designs reimagined for contemporary wear</p>
+            <a href="#editorial" class="btn btn--solid">Discover Now</a>
+        </div>
+        </div>
+
+        <div class="hero__slide">
+        <div class="hero__media"><img src="assets/heros/hero5.jpeg" alt="TOMEI model portrait"></div>
+        <div class="hero__scrim"></div>
+        <div class="hero__content hero__content--bottom-left">
+            <h1>Where Gold Meets Grandeur</h1>
+            <p class="hero__sub">Statement pieces crafted with Italian Influence</p>
+            <a href="#editorial" class="btn btn--solid">Explore Collection</a>
+        </div>
+        </div>
+    </div>
+        <div class="hero__dots" id="heroDots"></div>
+</section>
+
+    <!-- Bestseller -->
+    <section class="rail-section" id="bestseller">
+    <div class="rail-section__intro reveal">
+        <h2>Bestseller</h2>
+        <p>Explore the collection that has become a customer favorite. Featuring a curated selection of timeless classics and contemporary designs, these bestselling pieces exemplify exceptional craftsmanship, style, and sophistication. Discover the jewelry that continues to captivate and elevate every occasion. </p>
+        <a href="#" class="btn btn--outline">Shop Bestsellers</a>
+    </div>
+
+    <div class="rail" data-rail>
+        <div class="rail__track" data-rail-track>
+        <article class="card reveal">
+            <div class="card__media">
+            <img src="assets/products/Hello Kitty 0.2G.png" alt="Gold wafer gift set">
+            </div>
+            <div class="card__body">
+            <p class="card__name">TOMEI x Sanrio Hello Kitty Playgrounds Gold Wafer 0.20G</p>
+            <p class="card__meta">Fine Gold 9999</p>
+            <p class="card__price">RM 248.00</p>
+            </div>
+        </article>
+
+        <article class="card reveal">
+            <div class="card__media">
+            <img src="assets/products/Hello Kitty 0.5G.png" alt="Gold wafer">
+            </div>
+            <div class="card__body">
+            <p class="card__name">TOMEI x Sanrio Hello Kitty Kira Fairytale Gold Wafer 0.50G</p>
+            <p class="card__meta">Fine Gold 9999</p>
+            <p class="card__price">RM 648.00</p>
+            </div>
+        </article>
+
+        <article class="card reveal">
+            <div class="card__media">
+            <img src="assets/products/Hello Kitty Flower 0.5G.png" alt="Gold wafer, floral motif">
+            </div>
+            <div class="card__body">
+            <p class="card__name">TOMEI x Sanrio Hello Kitty Girly Flower Gold Wafer 0.50G</p>
+            <p class="card__meta">Fine Gold 9999</p>
+            <p class="card__price">RM 648.00</p>
+            </div>
+        </article>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- =========================================================
+        MONTHLY HIGHLIGHT
+        ========================================================= -->
+
+    <section class="monthly-highlight">
+
+        <!-- LEFT: EDITORIAL CONTENT -->
+        <div class="monthly-highlight__left">
+
+            <div class="monthly-highlight__text">
+
+                <h2>
+                    Monthly<br>
+                    Highlight
+                </h2>
+
+                <p>
+                    Stay updated with our latest arrivals, exclusive offers,
+                    and featured collections of the month. Each selection is
+                    handpicked to reflect the season’s trends and timeless
+                    elegance.
+                </p>
+
+            </div>
+
+
+            <!-- FEATURED PRODUCT -->
+            <div class="monthly-highlight__product">
+
+                <div class="monthly-highlight__product-image">
+                    <img
+                        src="assets/heros/Monthly 1.png"
+                        alt="Featured TOMEI jewellery"
+                    >
+                </div>
+
+                <a href="#" class="monthly-highlight__cta">
+                    <span>Discover more</span>
+                    <span class="monthly-highlight__arrow">→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT: CAMPAIGN IMAGE -->
+        <div class="monthly-highlight__right">
+            <img
+                src="assets/heros/Monthly 2.png"
+                alt="TOMEI jewellery collection"
+            >
+
+            <div class="monthly-highlight__tag">
+                <span class="monthly-highlight__tag-name">TOMEI Signature Collection</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrival -->
+    <section class="arrivals" id="collections">
+    <div class="arrivals__head reveal">
+        <h2>New Arrivals</h2>
+        <p>Be the first to explore our latest creations. Our new arrivals bring fresh designs, combining contemporary trends with timeless beauty. Each piece is thoughtfully crafted to complement your unique style, offering something special for every occasion.  </p>
+        <a href="#" class="btn btn--solid">Shop New In</a>
+    </div>
+    </section>
+
+    <!-- Editorial -->
+    <section class="editorial" id="editorial">
+    <div class="editorial__head reveal">
+        <h2>Editorial</h2>
+    </div>
+
+    <div class="editorial__grid">
+        <a class="ed-card reveal" href="#">
+        <div class="ed-card__media">
+            <img src="assets/products/Editorial1.png" alt="Model wearing layered gold bangles">
+        </div>
+        <div class="ed-card__body">
+            <h3>Signature, Worn Your Way</h3>
+            <p>Jewellery today is more than an occasion piece.</p>
+            <span class="link-arrow">Discover more →</span>
+        </div>
+        </a>
+
+        <a class="ed-card reveal" href="#">
+        <div class="ed-card__media">
+            <img src="assets/products/Editorial2.png" alt="Model in traditional dress wearing gold jewellery">
+        </div>
+        <div class="ed-card__body">
+            <h3>Pulang — The Joy I Carry Home</h3>
+            <p>Raya has always been about more than celebration.</p>
+            <span class="link-arrow">Discover more →</span>
+        </div>
+        </a>
+
+        <a class="ed-card reveal" href="#">
+        <div class="ed-card__media">
+            <img src="assets/products/Editorial3.png" alt="Craftsperson arranging jewellery in a display box">
+        </div>
+        <div class="ed-card__body">
+            <h3>Jewelry Secrets with Anna</h3>
+            <p>Every jewel tells a story.</p>
+            <span class="link-arrow">Discover more →</span>
+        </div>
+        </a>
+    </div>
+    </section>
+
+    <!-- Live Price -->
+    <section class="live-price" id="live-price">
+    <div class="live-price__head reveal">
+        <h2>Live Price</h2>
+        <p>Gold and silver move by the minute — so do our prices. This board refreshes automatically.</p>
+    </div>
+
+    <div class="price-boards reveal">
+        <div class="price-board">
+        <div class="price-board__head">
+            <span>Reference Price — Malaysia Ringgit (MYR)</span>
+        </div>
+        <table>
+            <thead>
+            <tr><th></th><th>We Buy</th><th>We Sell</th></tr>
+            </thead>
+            <tbody id="refPriceBody">
+            <tr data-base-buy="561726.00" data-base-sell="578935.31"><td>Gold / 1000g</td><td class="num" data-cell="buy">561,726.00</td><td class="num" data-cell="sell">578,935.31</td></tr>
+            <tr data-base-buy="280863.00" data-base-sell="289467.65"><td>Gold / 500g</td><td class="num" data-cell="buy">280,863.00</td><td class="num" data-cell="sell">289,467.65</td></tr>
+            <tr data-base-buy="8241.80" data-base-sell="9968.10"><td>Silver / 1000g</td><td class="num" data-cell="buy">8,241.80</td><td class="num" data-cell="sell">9,968.10</td></tr>
+            <tr data-base-buy="4120.90" data-base-sell="5093.32"><td>Silver / 500g</td><td class="num" data-cell="buy">4,120.90</td><td class="num" data-cell="sell">5,093.32</td></tr>
+            <tr data-base-buy="2563.20" data-base-sell="3144.87"><td>Silver / 10oz</td><td class="num" data-cell="buy">2,563.20</td><td class="num" data-cell="sell">3,144.87</td></tr>
+            </tbody>
+        </table>
+        <p class="price-board__updated">Last updated <span id="refUpdated">14 Aug 2026, 13:35</span> <span class="dot dot--live"></span></p>
+        </div>
+
+        <div class="price-board">
+        <div class="price-board__head">
+            <span>TOMEI Gold Jewellery — We Sell (MYR / gram)</span>
+        </div>
+        <table>
+            <tbody id="jewPriceBody">
+            <tr data-base-sell="680.00"><td>999</td><td class="num" data-cell="sell">680.00</td></tr>
+            <tr data-base-sell="630.00"><td>916</td><td class="num" data-cell="sell">630.00</td></tr>
+            <tr data-base-sell="555.00"><td>750</td><td class="num" data-cell="sell">555.00</td></tr>
+            <tr data-base-sell="307.00"><td>375</td><td class="num" data-cell="sell">307.00</td></tr>
+            <tr data-base-sell="673.00"><td>9999 Wafer / Coin</td><td class="num" data-cell="sell">673.00</td></tr>
+            </tbody>
+        </table>
+        <p class="price-board__updated">Last updated <span id="jewUpdated">14 Aug 2026, 09:45</span> <span class="dot dot--live"></span></p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-links reveal">
+        <div class="footer-links__newsletter">
+            <a href="index.html" class="logo logo--footer">
+                <img src="assets/Tomei Logo.png" alt="TOMEI">
+            </a>
+            <h4>Join the list</h4>
+            <form class="newsletter" onsubmit="return false;">
+                <div class="newsletter__row">
+                    <input id="newsletterEmail" type="email" placeholder="you@email.com" required>
+                    <button type="submit" class="btn btn--solid btn--small">Subscribe</button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <h4>Shop</h4>
+            <a href="#">Rings</a><a href="#">Necklaces</a><a href="#">Bangles</a><a href="#">Gold Bars</a>
+        </div>
+        <div>
+            <h4>About</h4>
+            <a href="#">Our Story</a><a href="#">Craftsmanship</a><a href="#">Stores</a><a href="#">Careers</a>
+        </div>
+        <div>
+            <h4>Support</h4>
+            <a href="#">Contact Us</a><a href="#">Shipping</a><a href="#">Care Guide</a><a href="#live-price">Live Price</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 TOMEI. All rights reserved.</span>
+    </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
