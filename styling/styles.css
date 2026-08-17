@@ -126,114 +126,6 @@
     to { transform: translateX(-50%); }
     }
 
-    /* ---------- Header ---------- */
-    .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: var(--paper);   /* matches --paper, slightly transparent */
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line-soft);
-    transition: box-shadow 0.3s;
-    }
-
-    .site-header.scrolled {
-    box-shadow: 0 6px 18px rgba(23, 19, 15, 0.05);
-    position: sticky;
-    }
-    
-    .header-inner {
-    max-width: var(--container);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    padding: 18px 32px;
-    }
-
-    .logo {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    }
-
-    .main-nav {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    font-size: 14px;
-    line-height: 1;        /* normalize text box height */
-    }
-
-    .main-nav a {
-    position: relative;
-    color: var(--ink-soft);
-    transition: color 0.2s;
-    /* padding-bottom removed — underline is absolutely positioned, doesn't need it */
-    }
-
-    .main-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0; right: 0;
-    bottom: -6px;           /* moved the offset here instead of padding */
-    height: 1px;
-    background: var(--plum);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s var(--ease);
-    }
-    .main-nav a:hover::after { transform: scaleX(1); }
-
-    .header-icons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    }
-
-    .icon-btn {
-    width: 38px; height: 38px;
-    display: flex; align-items: center; justify-content: center;
-    border-radius: 50%;
-    transition: background 0.2s;
-    }
-
-    .icon-btn:hover { background: var(--paper-2); }
-
-    .nav-toggle {
-    display: none;   /* hidden by default — desktop */
-    }
-
-    @media (max-width: 860px) {
-    .nav-toggle {
-        display: flex;  /* only shown at/below 860px */
-    }
-    }
-
-    .search-panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s var(--ease);
-    border-top: 1px solid transparent;
-    }
-    .search-panel.open { max-height: 80px; border-top-color: var(--line-soft); }
-    .search-panel input {
-    width: 100%;
-    max-width: var(--container);
-    margin: 18px auto;
-    display: block;
-    padding: 0 32px 10px;
-    border: none;
-    background: none;
-    border-bottom: 1px solid var(--line);
-    font-family: var(--font-display);
-    font-size: 22px;
-    color: var(--ink);
-    }
-    .search-panel input:focus { outline: none; border-bottom-color: var(--plum); }
-
     /* ---------- Hero ---------- */
     .hero {
     position: relative;
@@ -989,52 +881,6 @@
     line-height: 1.7;
 }
 
-    /* ---------- Footer ---------- */
-.site-footer { max-width: var(--container); margin: 0 auto; padding: 40px 32px 40px; }
-
-.footer-brand {
-    padding-bottom: 44px;
-    border-bottom: 1px solid var(--line);
-}
-.logo--footer { font-size: 32px; display: block; margin-bottom: 10px; }
-.footer-brand p { color: var(--ink-soft); font-size: 14px; }
-
-.footer-links {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr 1fr;
-    gap: 40px;
-    padding: 56px 0;
-    border-bottom: 1px solid var(--line);
-}
-.footer-links h4 { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 18px; }
-.footer-links a { display: block; padding: 6px 0; font-size: 14.5px; color: var(--ink); transition: color 0.2s; }
-.footer-links a:hover { color: var(--plum); }
-
-.footer-links__newsletter .newsletter__row { 
-    display: flex; 
-    gap: 8px; }
-.newsletter input {
-    border: none;
-    border-bottom: 1px solid var(--line);
-    background: none;
-    padding: 8px 2px;
-    font-size: 15px;
-    min-width: 0;
-    flex: 1;
-    color: var(--ink);
-}
-.newsletter input:focus { outline: none; border-color: var(--plum); }
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    font-size: 12.5px;
-    color: var(--ink-soft);
-    padding-top: 24px;
-}
-
     /* ---------- Back to top ---------- */
     .to-top {
     position: fixed;
@@ -1080,7 +926,6 @@
     .arrivals__head h2, .editorial__head h2, .live-price__head h2 { font-size: 32px; }
     .hero__price-chip { right: 20px; bottom: 84px; }
     .hero__content { padding: 0 20px; }
-    .footer-links { grid-template-columns: 1fr 1fr; }
     }
 
     .logo {
