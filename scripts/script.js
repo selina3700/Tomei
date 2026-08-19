@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackToTop();
   initLivePrices();
   initHero();
+  initSpotlight();
 });
 
 /* ---------- Sticky header shadow ---------- */
@@ -214,6 +215,43 @@ function initLivePrices() {
   }
 
   setInterval(tick, 6000);
+}
+
+function initSpotlight() {
+  const root = document.getElementById('arrivalsSpotlight');
+  if (!root) return;
+
+  const slides = Array.from(root.querySelectorAll('.spotlight__slide'));
+  const dotsWrap = document.getElementById('spotlightDots');
+  const prevBtn = root.querySelector('[data-spotlight-prev]');
+  const nextBtn = root.querySelector('[data-spotlight-next]');
+  if (slides.length < 2) return;
+
+  let current = slides.findIndex((s) => s.classList.contains('is-active'));
+  if (current < 0) current = 0;
+
+  const dots = slides.map((_, i) => {
+    const dot = document.createElement('span');
+    dot.className = 'spotlight__dot';
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+    return dot;
+  });
+
+  function render() {
+    slides.forEach((s, i) => s.classList.toggle('is-active', i === current));
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+  }
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    render();
+  }
+
+  prevBtn && prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn && nextBtn.addEventListener('click', () => goTo(current + 1));
+
+  render();
 }
 
 function initHero() {
